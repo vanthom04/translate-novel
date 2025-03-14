@@ -49,8 +49,8 @@ export const App = () => {
         onChangeLanguage={setDefaultLanguage}
         onTranslate={handleTranslate}
       />
-      <div className="w-full h-[calc(100vh-60px-16px-8px)] mt-2 md:flex gap-x-2">
-        <div className="md:flex-1/2 h-full border border-black dark:border-neutral-300">
+      <div className="w-full md:h-[calc(100vh-60px-16px-8px)] mt-2 md:flex md:gap-x-2">
+        <div className="md:flex-1/2 h-[520px] md:h-full border border-black dark:border-neutral-300">
           <Textarea
             value={content}
             spellCheck="false"
@@ -64,7 +64,7 @@ export const App = () => {
         <div className="flex items-center justify-center py-2 md:hidden">
           <ArrowDownIcon className="size-5 text-muted-foreground" />
         </div>
-        <div className="md:flex-1/2 h-full border border-black dark:border-neutral-300 relative">
+        <div className="md:flex-1/2 h-[520px] md:h-full border border-black dark:border-neutral-300 relative">
           {isTranslating ? (
             <div className="flex items-center justify-center h-full">
               <LoaderIcon className="size-4 text-muted-foreground animate-spin" />
